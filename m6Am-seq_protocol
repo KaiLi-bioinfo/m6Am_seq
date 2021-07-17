@@ -1,0 +1,130 @@
+m6Am-seq protocol
+Hanxiao Sun1,5, Kai Li1,2,3,5, Xiaoting Zhang1, Jun’e Liu1, Meiling Zhang1, Haowei Meng1 & Chengqi Yi1,3,4,*
+1State Key Laboratory of Protein and Plant Gene Research, School of Life Sciences, Peking University, Beijing 100871, China.
+2Academy for Advanced Interdisciplinary Studies, Peking University, Beijing 100871, China.
+3Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China.
+4Department of Chemical Biology and Synthetic and Functional Biomolecules Center, College of Chemistry and Molecular Engineering, Peking University, Beijing 100871, China.
+5These authors contributed equally to this work.
+*Correspondence: chengqi.yi@pku.edu.cn (C. Y.)
+ 
+Materials 
+Reagents 
+1x m7G-IPP buffer: 10 mM Tris-HCl, pH 7.4, 150 mM NaCl, 0.1% NP-40
+1x m7G-Low-salt IP buffer: 10 mM Tris-HCl, pH 7.4, 75 mM NaCl, 0.05% NP-40
+1x m7G-High-salt IP buffer: 10 mM Tris-HCl, pH 7.4, 200 mM NaCl, 0.05% NP-40 
+1x m7G-TET buffer: 10 mM Tris-HCl, pH 7.4, 1 mM EDTA, 0.05% NP40
+1x m6A-IPP buffer: 10 mM Tris-HCl, pH 7.4,150 mM NaCl, 0.1% NP-40 
+1x m6A-Low-salt IP buffer: 10 mM Tris-HCl, pH 7.4, 50 mM NaCl, 0.1% NP-40 
+1x m6A-High-salt IP buffer: 10 mM Tris-HCl, pH 7.4, 500 mM NaCl,0.1% NP-40
+protein A/G UltraLink Resin (ThermoFisher Scientific, 53132)
+RiboLock RNase inhibitor (ThermoFisher Scientific, EO0381)
+protein A magnetic beads (ThermoFisher Scientific, 10002D) 
+protein G magnetic beads (ThermoFisher Scientific, 10004D)
+NEBNext Magnesium RNA fragmentation Module (NEB, E6150S)
+RNasin Plus RNase Inhibitor (Promega, N2615)
+SUPERase·In RNase inhibitor (Invitrogen, AM2694)
+N6-methyladenosine (Sigma-Aldrich, M2780)
+Anti-m7G-cap monoclonal antibody (MBL, RN016M)
+Anti-m6A polyclonal antibody (Millipore, ABE572)
+MEGAclear Transcription Clean-Up Kit (Ambion, AM1908)
+TRIzol Reagent (Invitrogen, 15596018)
+SMARTer® Stranded Total RNA-Seq Kit v2 - Pico Input Mammalian (Takara, 634413)
+ 
+Procedure 
+cap-m7G RNA immunoprecipitation
+1. The total RNA is extracted from cells using TRIzol, according to the manufacturer’s instructions.
+2. Small RNA is depleted using MEGAclear Transcription Clean-Up Kit.
+3.100 μg >200 nt RNA is fragmented using RNA fragmentation buffer at 94°C for 4 min, followed by chilling in ice. 
+4. Add fragment stop solution buffer to stop the reaction.
+5. Add 2μl 3M sodium acetate (pH 5.2), 4 μl glycogen and 50 μl ice-cold 100%(vol/vol) ethanol to fragmented RNA mixture from step 4, vortex and precipitate for 2 h at -20°C; Next, centrifuge at 14,000 rpm for 30 min at 4°C in a precooled centrifuge. Wash the pellet twice with 1ml of 75%(vol/vol) ethanol at 14,000 rpm for 5 min. Centrifuge and carefully remove 75% ethanol. Air-dry the pellets and dissolve them in 100μl nuclease-free water.
+6. 10 ng of fragments are used as “input” and stored at -80°C.
+7. The remaining fragmented RNA is denatured at 65°C for 5 min, followed by chilling in ice. 
+8. Prepare RNA-antibody incubation buffer as the following table.
+Component 	Amount per reaction (μl)	Total amount
+denatured RNA	100 	/
+10x m7G-IPP buffer	20	1x
+cap-m7G antibody	2	1:100 dilution
+RiboLock RNase inhibitor	5	1:40 dilution
+nuclease-free water	73	/
+9. Mix gently with a pipette. The RNA-antibody mixture was incubated overnight at 4°C. 
+10. Transfer 20 μl of protein A/G UltraLink Resin into 1.5ml nuclease-free centrifuge tube. Resin is washed twice with 1 ml of 1x m7G IPP buffer by gently pipetting.
+11. Resuspended protein A/G UltraLink Resin with 200 μl 1x m7G IPP buffer, add 5 μl RiboLock RNase inhibitor. 
+12. Add 200μl of the antibody-RNA mixture into Resin from step 11. Incubate the mixture by rotator at 4°C for 3 h. 
+13. After incubation, centrifuge at 800 rpm for 5s at 4°C, remove the supernatant.
+14. Add 1ml of IPP buffer into the pellet from step 13. Wash the pellet by rotator at 4°C for 3 min. Centrifuge at 800 rpm for 2min at 4°C. Remove the supernatant.
+15. Repeat step 14.
+16. Add 1ml of 1x m7G-Low-salt IP buffer into the pellet from step 15. Wash the pellet by rotator at 4°C for 3 min. Centrifuge at 800 rpm for 2min at 4°C. Remove the supernatant.
+17. Add 1ml of 1x m7G-High-salt IP buffer into the pellet from step 16. Wash the pellet by rotator at 4°C for 3 min. Centrifuge at 800 rpm for 2min at 4°C. Remove the supernatant.
+18. Add 1ml of 1x m7G-TET buffer into the pellet from step 17. Wash the pellet by rotator at 4°C for 3 min. Centrifuge at 800 rpm for 2min at 4°C. Remove the supernatant.
+19. Repeat step 18.
+20. The resin-antibody-RNA pellet is resuspended in 1 ml Trizol and rotated for 10 min at room temperature. 
+21. Add 200μl chloroform into the Trizol from step 20 and mix the mixture by vortexing. Centrifuge at 14,000 rpm for 30 min at 4°C and transfer around 600 μl of supernatant into a new 1.5ml nuclease-free centrifuge tube.
+22. Add 60μl 3M sodium acetate (pH 5.2), 4 μl glycogen and 660 μl ice-cold 100%(vol/vol) Isopropanol to supernatant from step 21, vortex and precipitate for 2 h at -20°C; Next, centrifuge at 14,000 rpm for 30 min at 4°C in a precooled centrifuge. Wash the pellet twice with 1ml of 75%(vol/vol) ethanol at 14,000 rpm for 5 min. Centrifuge and carefully remove 75% ethanol. Air-dry the pellets and dissolve them in 16.5 μl nuclease-free water.
+23. Take 1μl of cap-m7G-containing RNA fragments and quantify by Qubit. Around 150 ng cap-m7G-immunoprecipitated RNA fragments could be obtained.
+ 
+In vitro demethylation treatment:
+1. 1 ng of the cap-m7G-immunoprecipitated RNA is used as “m7G-IP” and store at -20°C.
+2. RNA is subjected to [“FTO (+)”] or [“FTO (-)”] treatment. About 10 μl of RNA (around 100ng) is used for [“FTO (+)”] treatment. RNA is denatured at 65°C for 5 min, followed by chilling in ice. 
+3. Prepare the demethylation assay buffer as the following table. 
+Component 	Amount per reaction (μl)	Total amount
+denatured RNA	10	/
+500mM MES pH6.5	2	50mM
+2M KCl	1	100mM
+30mM MgCl2	1.33	2mM
+SUPERase·InRNase inhibitor	1	0.4 U/mL
+3mM 2-ketoglutarate	2	300μM
+1mM (NH4)2Fe(SO4)2·6H2O	2	100 μM
+purified FTO	/	1 μM
+nuclease-free water	Add nuclease-free water to 20μl
+4. Incubation at 37°C for 20 min.
+5. Add 180μl nuclease-free water into demethylation reaction. Add 200μl phenol : chloroform : isoamyl alcohol (25:24:1) and mix. Centrifuge at 16,000 g for 15min at 4°C. Add 200μl chloroform : isoamyl alcohol (24:1) and mix. Centrifuge at 16,000 g for 15min at 4°C. Transfer 200μl of supernatant into a new 1.5ml nuclease-free centrifuge tube.
+6. Add 20μl 3M sodium acetate (pH 5.2), 4 μl glycogen and 550 μl ice-cold 100%(vol/vol) ethanol to supernatant from step 5, vortex and precipitate for 2 h at -20°C; Next, centrifuge at 14,000 rpm for 30 min at 4°C in a precooled centrifuge. Wash the pellet twice with 1ml of 75%(vol/vol) ethanol at 14,000 rpm for 5 min. Centrifuge and carefully remove 75% ethanol. Air-dry the pellets and dissolve them in 155 μl nuclease-free water.
+7. Add 150 μl nuclease-free water into the 5 μl of remaining cap-m7G-immunoprecipitated RNA from step 2.
+ 
+m6A RNA immunoprecipitation:
+1. Transfer 10 μl of protein A magnetic beads and 10 μl of protein G magnetic beads into a 1.5ml nuclease-free centrifuge tube.
+2. Beads are washed with 500 μl of 1x m6A-IPP buffer by gently pipetting. Keep the tube on the magnetic separation device, pipette out the supernatant.
+3. The beads are resuspended in 500 μl of 1x m6A-IPP buffer and add 2 μg of anti-m6A polyclonal antibody. Mix the beads-antibody mixture by gently pipetting. Incubation on the rotator at 4°C for at least 6 h. 
+4. After incubation, keep the beads-antibody mixture on the magnetic separation device, pipette out the supernatant.
+5. The beads are resuspended in 500 μl of 1x m6A-IPP buffer, mix by gently pipetting. Keep the tube on the magnetic separation device, pipette out the supernatant.
+6. 155 μl [“FTO (+)”] or [“FTO (-)”] RNA fragment is denatured at 65°C for 5 min, followed by chilling in ice. 
+7. Prepare the incubation mixture as the follow table.
+Component 	Amount per reaction (μl)	Total amount
+denatured RNA	155	/
+5×m6A-IPP buffer	40	1x
+RNasin Plus RNase Inhibitor	5	1:40 dilution
+8. Transfer 200 μl mixture from step 7 into beads from step 5. Mix the beads-antibody-RNA mixture by gently pipetting. Incubation on the rotator at 4°C for 2h. 
+9. Keep the tube on the magnetic separation device, pipette out the supernatant.
+10.The beads are resuspended in 500 μl of 1x m6A-IPP buffer. Mix the mixture by gently pipetting. Keep the tube on the magnetic separation device, pipette out the supernatant.
+11. Repeat step 10.
+12. The beads are washed twice with 500 μl of 1x m6A-Low-salt IP buffer as the same methods.
+13. The beads are washed twice with 500 μl of 1x m6A-High-salt IP buffer as the same methods.
+14.Prepare the elution buffer as the follow table：
+Component 	Amount per reaction (μl)	Total amount
+5x m6A-IPP buffer	40	1x
+20mM N6-methyladenosine	67	6.7 mM
+RiboLock RNase inhibitor	5	1:40 dilution
+nuclease-free water	88	/
+15. Transfer the elution buffer into the beads from step 13. Incubation on the rotator at room temperature for 1h. 
+16. Keep the tube on the magnetic separation device, transfer 200 μl of supernatant into a new 1.5ml nuclease-free centrifuge tube.
+17. Add 195 μl of 1x m6A-IPP buffer and 5 μl of RiboLock RNase inhibitor into the beads from step 16. Incubation on the rotator at room temperature for 20 min. 
+18. Keep the tube on the magnetic separation device, transfer 200 μl of supernatant into 1.5ml nuclease-free centrifuge tube from step 16.
+19. Add 400μl phenol : chloroform : isoamyl alcohol (25:24:1) and mix. Centrifuge at 16,000 g for 15min at 4°C. Add 400μl chloroform : isoamyl alcohol (24:1) and mix. Centrifuge at 16,000 g for 15min at 4°C. Transfer 400μl of supernatant into a new 1.5ml nuclease-free centrifuge tube.
+20. Add 40μl 3M sodium acetate (pH 5.2), 4 μl glycogen and 1 ml ice-cold 100%(vol/vol) ethanol to supernatant from step 19, vortex and precipitate for 2 h at -20°C.
+21.Centrifuge at 14,000 rpm for 30 min at 4°C in a precooled centrifuge. Wash the pellet twice with 1ml of 75%(vol/vol) ethanol at 14,000 rpm for 5 min. Centrifuge and carefully remove 75% ethanol. Air-dry the pellets and dissolve them in 8 μl nuclease-free water.
+22. The elut RNA is called  [“FTO (+) m6A-IP”] and [“FTO (-) m6A-IP”].
+ 
+Library preparation:
+The “input”, “m7G-IP”, [“FTO (+) m6A-IP”] and [“FTO (-) m6A-IP”] samples are subjected to library construction using SMARTer® Stranded Total RNA-Seq Kit v2 - Pico Input Mammalian according to the manufacturer's protocol (https://www.takarabio.com/assets/a/113361). 
+
+There are two details to be noted as following list:
+1. For the cDNA synthesis step, we performed the first step according to Option 2 (without fragmentation).
+2. For the final RNA-seq library amplification, we perform PCR cycles according to the following list
+RNA	PCR cycles
+10ng input	11
+1ng m7G-IP	13
+FTO (+) m6A-IP	14
+FTO (-) m6A-IP	14
+Finally, determine the concentration by the Qubit and assess the size distribution by the analyzer.
+ 
+
